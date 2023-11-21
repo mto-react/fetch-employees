@@ -1,7 +1,7 @@
 import React from 'react';
 import { useState } from 'react'
 import './App.css'
-import { Employees } from './components/Employees'
+import { sampleEmployee } from './components/data'
 import DisplayEmployees from './components/DisplayEmployees'
 
 function App() {
@@ -10,7 +10,7 @@ function App() {
   return (
     <div className='App'>
       <h2>Liste des Employees</h2>
-      <DisplayEmployees employees = {Employees} />
+      <DisplayEmployees employees = {sampleEmployee} />
     </div>
   )
 }

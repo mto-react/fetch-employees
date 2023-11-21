@@ -7,7 +7,7 @@ function DisplayEmployees({employees}) {
         <div className="employees">
         {
             employees.map((employee) => (
-                <div className="employee" key = {employee.id}>
+                <div className="employee" key = {employee.name.first}>
                     <DisplayEmployee employee = {employee} />             
                 </div>
             ))
