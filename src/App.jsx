@@ -16,6 +16,7 @@ function App() {
       .get('https://randomuser.me/api?nat=en')
       // Use this data to update the state
       .then((response) => {
+        console.log(response.data)
         setEmployee(response.data.results[0]);
       });
   };
